@@ -2314,7 +2314,7 @@
         background: #fff;
         max-height: calc(100vh - 70px);
         overflow: auto;
-        padding-bottom: 40px;
+        padding-bottom: 70px;
         display: none;
     }
     .menu__list {
