@@ -2531,6 +2531,9 @@
     .slick-dots button:hover {
         background: #f6795b;
     }
+    .socials-main a:hover img {
+        opacity: 0.8;
+    }
 }
 
 @media (hover: none) {
@@ -2569,5 +2572,8 @@
     }
     .slick-dots button:active {
         background: #f6795b;
+    }
+    .socials-main a:active img {
+        opacity: 0.8;
     }
 }
