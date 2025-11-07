@@ -2188,15 +2188,17 @@
     }
     .item-portfolio .btn-main {
         height: 42px;
-        padding: 0 38px;
+        padding: 0 10px;
         font-size: 14px;
+        width: 100%;
     }
     .item-portfolio__text {
+        font-size: 13px;
         margin-bottom: 20px;
     }
     .item-portfolio__title {
-        font-size: 17px;
-        margin-bottom: 13px;
+        font-size: 14px;
+        margin-bottom: 10px;
     }
     .item-portfolio {
         padding-bottom: 20px;
@@ -2232,14 +2234,14 @@
         padding: 18px 0;
     }
     .video-review {
-        font-size: 15px;
+        font-size: 14px;
     }
     .video-review__title {
         margin-bottom: 6px;
     }
     .video-review__image::before {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
     .videos {
         padding-bottom: 45px;
