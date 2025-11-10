@@ -236,6 +236,69 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 });
 
+	$('.slider-sertificats').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		touchThreshold: 1000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
+	responsive: [
+		{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+					dots: true,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+					dots: true,
+				}
+			}
+		]
+	});
+
+		{
+		if ($(window).width() < 992) { 
+			$(".item-accordion__head").click(function() {
+				$(this).parent().siblings().removeClass("active");
+				$(this).parent().siblings().find(".item-accordion__content").slideUp(200);
+				$(this).siblings(".item-accordion__content").slideToggle(200);
+				$(this).parent().toggleClass("active");
+			});
+		}
+	}
+
+	{
+		if ($(window).width() > 992) { 
+			$(".item-accordion__head").mouseover(function() {
+				$(".item-accordion").removeClass("active");
+				$(this).parent().addClass("active");
+			});
+		}
+	}
+
+	
+  $(".item-dropdown__head").click(function() {
+    $(this).parent().toggleClass("active");
+    $(this).siblings().slideToggle(200);
+    $(this).parent().siblings(".item-dropdown").removeClass("active");
+    $(this).parent().siblings(".item-dropdown").find(".item-dropdown__content").slideUp(200);
+  });
+
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
