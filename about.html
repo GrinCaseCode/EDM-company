@@ -22,7 +22,7 @@
 </head>
 <body> 
 
-	<div class="wrapper">
+	<div class="wrapper wrapper_page">
 
 		<header class="header default">
 			<div class="header__top">
@@ -63,7 +63,7 @@
 								<a href="#">О компании</a>
 								<i class="fas fa-chevron-down"></i>
 								<ul>
-									<li><a href="#">о нас</a></li>
+									<li class="active"><a href="#">о нас</a></li>
 									<li><a href="#">этапы работы</a></li>
 									<li><a href="#">документы</a></li>
 									<li><a href="#">вопрос ответ</a></li>
@@ -89,261 +89,154 @@
 			<div class="menu-overlay"></div>
 		</header>
 
-		<section class="billbord">
+		<section class="page-about">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-9">
-						<h1 class="title-section"><strong>Строительство и ремонт в Крыму «под ключ»:</strong> полный цикл работ</h1>
-						<div class="billbord__price">от 65 000 ₽ м²</div>
-						<div class="billbord__buttons">
-							<a href="#callback" class="btn-main fancybox">Оставить заявку</a>
-							<a href="#callback" class="btn-main btn-main_page fancybox">Записаться на просмотр</a>
-						</div>
+				<div class="row page-about__top">
+					<div class="col-lg-4">
+						<h1 class="title-middle">Компания «ЭДМ» основана в 2010 году</h1>
 					</div>
-					<div class="col-lg-3">
-						<ul class="billbord__list">
-							<li>70+ введённых объектов в Крыму за 15 лет</li>
-							<li>Честная цена за м² без скрытых платежей</li>
-							<li>Аккредитованы <img src="img/ic_sber.svg" alt="sber"></li>
+					<div class="col-lg-4">
+						<p>За 15 лет работы мы успешно построили десятки домов, создали элитный коттеджный поселок в Гаспре, многоквартирный дом бизнес-класса в Ливадии, выполнили десятки ремонтов квартир и домов на ЮБК.</p>
+					</div>
+					<div class="col-lg-4">
+						<ul>
+							<li>Диапазон строительных услуг максимально широк: от подбора земельного участка и проектирования, до ввода дома в эксплуатацию.</li>
+							<li>Основное направление деятельности – строительство индивидуальных жилых домов, многоэтажное строительство и выполнение ремонтов на ЮБК</li>
 						</ul>
 					</div>
 				</div>
+				<div class="page-about__image">
+					<picture>
+						<source srcset="img/about.avif" type="image/avif">
+						<source srcset="img/about.webp" type="image/webp">
+						<img src="img/about.jpg" alt="alt">
+					</picture>
+				</div>
+				<div class="row row_about">
+					<div class="col-lg-4 col-md-6">
+						<div class="item-about">
+							<div class="item-about__icon">
+								<img src="img/ic_about1.svg" alt="alt">
+							</div>
+							<div class="item-about__content">
+								<div class="item-about__title">Опыт строительства</div>
+								<p>Наш опыт 15 лет строительства оградит Вас от ошибок связанных с проектированием, строительством, инженерией и отделкой.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="item-about">
+							<div class="item-about__icon">
+								<img src="img/ic_about2.svg" alt="alt">
+							</div>
+							<div class="item-about__content">
+								<div class="item-about__title">Договор</div>
+								<p>Чтобы избежать срывов сроков строительства или неожиданных доплат! <br>Мы подписываем договор в котором сумма и сроки строительства остаются неизменными.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="item-about">
+							<div class="item-about__icon">
+								<img src="img/ic_about3.svg" alt="alt">
+							</div>
+							<div class="item-about__content">
+								<div class="item-about__title">Контроль</div>
+								<p>Для контроля строительства, по Вашему желанию организуем онлайн трансляцию со стройплощадки.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="item-about">
+							<div class="item-about__icon">
+								<img src="img/ic_about4.svg" alt="alt">
+							</div>
+							<div class="item-about__content">
+								<div class="item-about__title">Авторский надзор</div>
+								<p>Для безупречного исполнения работ  производится трех уровневый контроль качества главным инженером, прорабом и авторским надзором</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="item-about">
+							<div class="item-about__icon">
+								<img src="img/ic_about5.svg" alt="alt">
+							</div>
+							<div class="item-about__content">
+								<div class="item-about__title">Авторский надзор</div>
+								<p>Работа с дизайнерами и авторский надзор   позволяет грамотно подобрать материалы, мебель, аксессуары и исключить непродуманные решения.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="item-about">
+							<div class="item-about__icon">
+								<img src="img/ic_about6.svg" alt="alt">
+							</div>
+							<div class="item-about__content">
+								<div class="item-about__title">Экскурсия на объект</div>
+								<p>Чтобы наглядно убедиться в качестве работ – мы можем вместе посетить наши строящиеся или готовые объекты.</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
-		<section class="cases">
+		<section class="guarantee">
 			<div class="container">
-				<h2 class="title-section">Примеры реализованных проектов</h2>
-				<div class="slider-cases">
-					<div>
-						<div class="unit-case">
-							<div class="row unit-case__gallery">
-								<div class="col-lg-8">
-									<a href="img/case1_1.jpg" class="unit-case__image" data-fancybox="case1">
-										<img src="img/case1_1.jpg" alt="alt">
-									</a>
-								</div>
-								<div class="col-lg-4">
-									<div class="row">
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_2.jpg" class="unit-case__image" data-fancybox="case1">
-												<img src="img/case1_2.jpg" alt="alt">
-											</a>
-										</div>
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_3.jpg" class="unit-case__image" data-fancybox="case1">
-												<img src="img/case1_3.jpg" alt="alt">
-											</a>
-										</div>
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_4.jpg" class="unit-case__image" data-fancybox="case1">
-												<img src="img/case1_4.jpg" alt="alt">
-											</a>
-										</div>
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_5.jpg" class="unit-case__image" data-fancybox="case1">
-												<img src="img/case1_5.jpg" alt="alt">
-											</a>
-										</div>
-									</div>
-								</div>
+				<h2 class="title-middle">Какие гарантии мы даём</h2>
+				<div class="row row_main">
+					<div class="col-lg-4">
+						<div class="item-guarantee">
+							<div class="item-guarantee__image">
+								<img src="img/guarantee1.jpg" alt="alt">
 							</div>
-							<div class="row">
-								<div class="col-lg-5">
-									<div class="item-feature">
-										<strong>Город</strong>
-										<p>Ялта, п. Гаспра</p>
-									</div>
-									<div class="item-feature">
-										<strong>Срок выполнения</strong>
-										<p>Срок строиельства - 18 месяцев</p>
-									</div>
-									<div class="item-feature">
-										<strong>Общая площадь</strong>
-										<p>226 м<sup>2</sup></p>
-									</div>
-									<div class="item-feature">
-										<strong>Фундамент</strong>
-										<p>Монолитная плита</p>
-									</div>
-									<div class="item-feature">
-										<strong>Несущие конструкции</strong>
-										<p>Монолитный каркас</p>
-									</div>
-									<div class="item-feature">
-										<strong>Кровля</strong>
-										<p>Плоская, эксплуатируемая</p>
-									</div>
-								</div>
-								<div class="col-lg-7">
-									<div class="unit-case__info">
-										<h3 class="title-middle">Строительство виллы в коттеджном поселке «Chaire Village»</h3>
-										<ul>
-											<li>Проектирование и строительство виллы 226 м<sup>2</sup> «под ключ»</li>
-											<li>Этапы строительства от подбора земли до передачи ключей</li>
-											<li>Подробные фотографии качества наших работ</li>
-										</ul>
-										<p>Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня способствует подготовке и реализации кластеризации усилий. Прежде всего, сложившаяся структура организации позволяет оценить значение своевременного выполнения сверхзадачи. Но реплицированные с зарубежных источников, современные исследования являются только методом политического участия и в равной степени предоставлены сами себе</p>
-									</div>
-									<div class="unit-case__buttons">
-										<a href="#" class="btn-main">Получить образец сметы</a>
-										<a href="#" class="btn-main btn-main_secondary">Подробнее о проекте</a>
-									</div>
-								</div>
+							<div class="item-guarantee__content">
+								<div class="item-guarantee__value">5 лет</div>
+								<div class="item-guarantee__title">Гарантии на фундамент</div>
 							</div>
 						</div>
 					</div>
-					<div>
-						<div class="unit-case">
-							<div class="row unit-case__gallery">
-								<div class="col-lg-8">
-									<a href="img/case1_1.jpg" class="unit-case__image" data-fancybox="case1">
-										<img src="img/case1_1.jpg" alt="alt">
-									</a>
-								</div>
-								<div class="col-lg-4">
-									<div class="row">
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_2.jpg" class="unit-case__image" data-fancybox="case1">
-												<img src="img/case1_2.jpg" alt="alt">
-											</a>
-										</div>
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_3.jpg" class="unit-case__image" data-fancybox="case1">
-												<img src="img/case1_3.jpg" alt="alt">
-											</a>
-										</div>
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_4.jpg" class="unit-case__image" data-fancybox="case1">
-												<img src="img/case1_4.jpg" alt="alt">
-											</a>
-										</div>
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_5.jpg" class="unit-case__image" data-fancybox="case1">
-												<img src="img/case1_5.jpg" alt="alt">
-											</a>
-										</div>
+					<div class="col-lg-8">
+						<div class="row row_main">
+							<div class="col-md-6">
+								<div class="item-guarantee">
+									<div class="item-guarantee__image">
+										<img src="img/guarantee2.jpg" alt="alt">
+									</div>
+									<div class="item-guarantee__content">
+										<div class="item-guarantee__title">Гарантии на отделочные материалы от производителя</div>
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-lg-5">
-									<div class="item-feature">
-										<strong>Город</strong>
-										<p>Ялта, п. Гаспра</p>
+							<div class="col-md-6">
+								<div class="item-guarantee">
+									<div class="item-guarantee__image">
+										<img src="img/guarantee3.jpg" alt="alt">
 									</div>
-									<div class="item-feature">
-										<strong>Срок выполнения</strong>
-										<p>Срок строиельства - 18 месяцев</p>
-									</div>
-									<div class="item-feature">
-										<strong>Общая площадь</strong>
-										<p>226 м<sup>2</sup></p>
-									</div>
-									<div class="item-feature">
-										<strong>Фундамент</strong>
-										<p>Монолитная плита</p>
-									</div>
-									<div class="item-feature">
-										<strong>Несущие конструкции</strong>
-										<p>Монолитный каркас</p>
-									</div>
-									<div class="item-feature">
-										<strong>Кровля</strong>
-										<p>Плоская, эксплуатируемая</p>
-									</div>
-								</div>
-								<div class="col-lg-7">
-									<div class="unit-case__info">
-										<h3 class="title-middle">Строительство виллы в коттеджном поселке «Chaire Village»</h3>
-										<ul>
-											<li>Проектирование и строительство виллы 226 м<sup>2</sup> «под ключ»</li>
-											<li>Этапы строительства от подбора земли до передачи ключей</li>
-											<li>Подробные фотографии качества наших работ</li>
-										</ul>
-										<p>Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня способствует подготовке и реализации кластеризации усилий. Прежде всего, сложившаяся структура организации позволяет оценить значение своевременного выполнения сверхзадачи. Но реплицированные с зарубежных источников, современные исследования являются только методом политического участия и в равной степени предоставлены сами себе</p>
-									</div>
-									<div class="unit-case__buttons">
-										<a href="#" class="btn-main">Получить образец сметы</a>
-										<a href="#" class="btn-main btn-main_secondary">Подробнее о проекте</a>
+									<div class="item-guarantee__content">
+										<div class="item-guarantee__title">Гарантии на отдельные узлы дома</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div>
-						<div class="unit-case">
-							<div class="row unit-case__gallery">
-								<div class="col-lg-8">
-									<a href="img/case1_1.jpg" class="unit-case__image" data-fancybox="case2">
-										<img src="img/case1_1.jpg" alt="alt">
-									</a>
-								</div>
-								<div class="col-lg-4">
-									<div class="row">
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_2.jpg" class="unit-case__image" data-fancybox="case2">
-												<img src="img/case1_2.jpg" alt="alt">
-											</a>
-										</div>
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_3.jpg" class="unit-case__image" data-fancybox="case2">
-												<img src="img/case1_3.jpg" alt="alt">
-											</a>
-										</div>
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_4.jpg" class="unit-case__image" data-fancybox="case2">
-												<img src="img/case1_4.jpg" alt="alt">
-											</a>
-										</div>
-										<div class="col-lg-6 col-3">
-											<a href="img/case1_5.jpg" class="unit-case__image" data-fancybox="case2">
-												<img src="img/case1_5.jpg" alt="alt">
-											</a>
-										</div>
+							<div class="col-md-6">
+								<div class="item-guarantee">
+									<div class="item-guarantee__image">
+										<img src="img/guarantee4.jpg" alt="alt">
+									</div>
+									<div class="item-guarantee__content">
+										<div class="item-guarantee__title">Гарантйный ремонт выполняем собственной бригадой</div>
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-lg-5">
-									<div class="item-feature">
-										<strong>Город</strong>
-										<p>Ялта, п. Гаспра</p>
+							<div class="col-md-6">
+								<div class="item-guarantee">
+									<div class="item-guarantee__image">
+										<img src="img/guarantee5.jpg" alt="alt">
 									</div>
-									<div class="item-feature">
-										<strong>Срок выполнения</strong>
-										<p>Срок строиельства - 18 месяцев</p>
-									</div>
-									<div class="item-feature">
-										<strong>Общая площадь</strong>
-										<p>226 м<sup>2</sup></p>
-									</div>
-									<div class="item-feature">
-										<strong>Фундамент</strong>
-										<p>Монолитная плита</p>
-									</div>
-									<div class="item-feature">
-										<strong>Несущие конструкции</strong>
-										<p>Монолитный каркас</p>
-									</div>
-									<div class="item-feature">
-										<strong>Кровля</strong>
-										<p>Плоская, эксплуатируемая</p>
-									</div>
-								</div>
-								<div class="col-lg-7">
-									<div class="unit-case__info">
-										<h3 class="title-middle">Строительство виллы в коттеджном поселке «Chaire Village»</h3>
-										<ul>
-											<li>Проектирование и строительство виллы 226 м<sup>2</sup> «под ключ»</li>
-											<li>Этапы строительства от подбора земли до передачи ключей</li>
-											<li>Подробные фотографии качества наших работ</li>
-										</ul>
-										<p>Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня способствует подготовке и реализации кластеризации усилий. Прежде всего, сложившаяся структура организации позволяет оценить значение своевременного выполнения сверхзадачи. Но реплицированные с зарубежных источников, современные исследования являются только методом политического участия и в равной степени предоставлены сами себе</p>
-									</div>
-									<div class="unit-case__buttons">
-										<a href="#" class="btn-main">Получить образец сметы</a>
-										<a href="#" class="btn-main btn-main_secondary">Подробнее о проекте</a>
+									<div class="item-guarantee__content">
+										<div class="item-guarantee__title">Возможность послегарантийного обслуживания по договору</div>
 									</div>
 								</div>
 							</div>
@@ -353,50 +246,75 @@
 			</div>
 		</section>
 
-		<section class="calculation">
+		<section class="steps">
 			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col_calculation">
-						<h2 class="title-block">Узнайте точную стоимость вашего дома в Крыму</h2>
-						<div class="calculation__line">
-							<div class="calculation__value">за 2 минуты</div>
-							<div class="calculation__descr">По самым выгодным условиям, без скрытых платежей и доплат</div>
+				<h2 class="title-section">Как мы строим дома?</h2>
+				<div class="steps-wrap">
+					<div class="item-step">
+						<div class="item-step__count">01</div>
+						<div class="item-step__title">Получаем разрешение на строительство</div>
+						<div class="item-step__text">
+							<p>ГПЗУ, проект, СПОЗУ, разрешения и ввод в экспуатацию</p>
 						</div>
-						<div class="title-form">Оставьте заявку и мы свяжемся с Вами в течение 15 минут</div>
-						<div class="calculation__form">
-							<form>
-								<div class="row">
-									<div class="col-md-6">
-										<div class="item-form">
-											<input type="text" placeholder="Имя" required>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="item-form">
-											<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<input type="submit" value="Отправить" class="btn-main">
-									</div>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" required checked />
-										<span>Я даю согласие на обработку моих персональных данных ООО «ЭДМ» (ИНН 910206342908) в целях обработки заявки и обратной связи. Политика конфиденциальности — <a href="#" target="_blank">по ссылке</a></span>
-									</label>
-								</div>
-							</form>
+						<div class="item-step__image">
+							<img src="img/step1.jpg" alt="alt">
 						</div>
+						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
 					</div>
-					<div class="col-lg-6 col_image">
-						<div class="calculation__image">
-							<picture>
-								<source srcset="img/calculation.avif" type="image/avif">
-								<source srcset="img/calculation.webp" type="image/webp">
-								<img src="img/calculation.png" alt="alt">
-							</picture>
+					<div class="item-step">
+						<div class="item-step__count">02</div>
+						<div class="item-step__title">Земляные <br>работы</div>
+						<div class="item-step__text">
+							<p>очистка, планировка, котлован, засыпка, дренаж</p>
 						</div>
+						<div class="item-step__image">
+							<img src="img/step2.jpg" alt="alt">
+						</div>
+						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
+					</div>
+					<div class="item-step">
+						<div class="item-step__count">03</div>
+						<div class="item-step__title">Фундамент, стены, перекрытия</div>
+						<div class="item-step__text">
+							<p>армирование, бетон по марке; ракушечник/газоблок; монолит</p>
+						</div>
+						<div class="item-step__image">
+							<img src="img/step3.jpg" alt="alt">
+						</div>
+						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
+					</div>
+					<div class="item-step">
+						<div class="item-step__count">04</div>
+						<div class="item-step__title">Кровля</div>
+						<div class="item-step__text">
+							<p>по плите или стропилам; металлочерепица, битумная/глиняная черепица</p>
+						</div>
+						<div class="item-step__image">
+							<img src="img/step4.jpg" alt="alt">
+						</div>
+						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
+					</div>
+					<div class="item-step">
+						<div class="item-step__count">05</div>
+						<div class="item-step__title">Фасад и коммуникации</div>
+						<div class="item-step__text">
+							<p>вентиляция, канализация, водопровод, электрика; штукатурка, панели, камень, планкен.</p>
+						</div>
+						<div class="item-step__image">
+							<img src="img/step5.jpg" alt="alt">
+						</div>
+						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
+					</div>
+					<div class="item-step">
+						<div class="item-step__count">06</div>
+						<div class="item-step__title">Оформление собственности</div>
+						<div class="item-step__text">
+							<p>геодезия, инвентаризация, техплан, ЕГРН, Росреестр.</p>
+						</div>
+						<div class="item-step__image">
+							<img src="img/step6.jpg" alt="alt">
+						</div>
+						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
 					</div>
 				</div>
 			</div>
@@ -404,7 +322,7 @@
 
 		<section class="etaps">
 			<div class="container">
-				<h2 class="title-section">Этапы работы с нами</h2>
+				<h1 class="title-section">Этапы работы с нами</h1>
 				<div class="descr-section">Знаем всё о строительстве и оформлении недвижимости в Ялте</div>
 				<div class="slider-wrapper">
 					<div class="slider-etaps">
@@ -533,214 +451,6 @@
 			</div>
 		</section>
 
-		<section class="documents">
-			<div class="container">
-				<h2 class="title-section">Мы аккредитованы по всем направлениям</h2>
-				<div class="slider-wrapper-documents">
-					<div class="slider-documents">
-						<div>
-							<a href="#" class="item-document">
-								<span class="item-document__title">Градостроительный план земельного участка (ГПЗУ)</span>
-								<span class="item-document__bottom">
-									<span class="item-document__format">pdf</span>
-									<span class="item-document__info">
-										<span class="item-document__date">01.01.2024</span>
-										<span class="item-document__size">100 Kb</span>
-									</span>
-								</span>
-							</a>
-						</div>
-						<div>
-							<a href="#" class="item-document">
-								<span class="item-document__title">Заключение государственной экспертизы проектной документации</span>
-								<span class="item-document__bottom">
-									<span class="item-document__format">pdf</span>
-									<span class="item-document__info">
-										<span class="item-document__date">01.01.2024</span>
-										<span class="item-document__size">100 Kb</span>
-									</span>
-								</span>
-							</a>
-						</div>
-						<div>
-							<a href="#" class="item-document">
-								<span class="item-document__title">Согласования с надзорными органами</span>
-								<span class="item-document__bottom">
-									<span class="item-document__format">pdf</span>
-									<span class="item-document__info">
-										<span class="item-document__date">01.01.2024</span>
-										<span class="item-document__size">100 Kb</span>
-									</span>
-								</span>
-							</a>
-						</div>
-						<div>
-							<a href="#" class="item-document">
-								<span class="item-document__title">Документ, подтверждающий уплату госпошлины</span>
-								<span class="item-document__bottom">
-									<span class="item-document__format">pdf</span>
-									<span class="item-document__info">
-										<span class="item-document__date">01.01.2024</span>
-										<span class="item-document__size">100 Kb</span>
-									</span>
-								</span>
-							</a>
-						</div>
-						<div>
-							<a href="#" class="item-document">
-								<span class="item-document__title">Градостроительный план земельного участка (ГПЗУ)</span>
-								<span class="item-document__bottom">
-									<span class="item-document__format">pdf</span>
-									<span class="item-document__info">
-										<span class="item-document__date">01.01.2024</span>
-										<span class="item-document__size">100 Kb</span>
-									</span>
-								</span>
-							</a>
-						</div>
-						<div>
-							<a href="#" class="item-document">
-								<span class="item-document__title">Заключение государственной экспертизы проектной документации</span>
-								<span class="item-document__bottom">
-									<span class="item-document__format">pdf</span>
-									<span class="item-document__info">
-										<span class="item-document__date">01.01.2024</span>
-										<span class="item-document__size">100 Kb</span>
-									</span>
-								</span>
-							</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-9">
-							<div class="documents__buttons">
-								<a href="#" class="btn-main btn-main_secondary">Скачать смету <i class="far fa-arrow-to-bottom"></i></a>
-								<a href="#" class="btn-main btn-main_secondary">Скачать договор <i class="far fa-arrow-to-bottom"></i></a>
-							</div>
-						</div>
-						<div class="col-lg-3 col_order">
-							<div class="slider-controls">
-								<div class="slider-counter">
-									<div class="slider-counter__current">0</div>
-									<span>/</span>
-									<div class="slider-counter__total">0</div>
-								</div>
-								<div class="slider-controls__arrows"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="application">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-8">
-						<h2 class="title-section">Получите подборку эксклюзивных участков</h2>
-						<div class="title-middle">от 2 млн рублей в Ялте и на Южном берегу Крыма</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="form-page">
-							<div class="title-form">Оставьте заявку и мы отправим Вам документ через 1 минуту</div>
-							<form>
-								<div class="item-form">
-									<input type="text" placeholder="Имя" required>
-								</div>
-								<div class="item-form">
-									<input type="tel" placeholder="Телефон" class="input-phone" inputmode="numeric" required>
-								</div>
-								<div class="item-form">
-									<input type="email" placeholder="Почта" inputmode="email" required>
-								</div>
-								<input type="submit" value="Получить список участков" class="btn-main">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" required checked />
-										<span>Я даю согласие на обработку моих персональных данных ООО «ЭДМ» (ИНН 910206342908) в целях обработки заявки и обратной связи. Политика конфиденциальности — <a href="#" target="_blank">по ссылке</a></span>
-									</label>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="steps">
-			<div class="container">
-				<h2 class="title-section">Как мы строим дома?</h2>
-				<div class="steps-wrap">
-					<div class="item-step">
-						<div class="item-step__count">01</div>
-						<div class="item-step__title">Получаем разрешение на строительство</div>
-						<div class="item-step__text">
-							<p>ГПЗУ, проект, СПОЗУ, разрешения и ввод в экспуатацию</p>
-						</div>
-						<div class="item-step__image">
-							<img src="img/step1.jpg" alt="alt">
-						</div>
-						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
-					</div>
-					<div class="item-step">
-						<div class="item-step__count">02</div>
-						<div class="item-step__title">Земляные <br>работы</div>
-						<div class="item-step__text">
-							<p>очистка, планировка, котлован, засыпка, дренаж</p>
-						</div>
-						<div class="item-step__image">
-							<img src="img/step2.jpg" alt="alt">
-						</div>
-						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
-					</div>
-					<div class="item-step">
-						<div class="item-step__count">03</div>
-						<div class="item-step__title">Фундамент, стены, перекрытия</div>
-						<div class="item-step__text">
-							<p>армирование, бетон по марке; ракушечник/газоблок; монолит</p>
-						</div>
-						<div class="item-step__image">
-							<img src="img/step3.jpg" alt="alt">
-						</div>
-						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
-					</div>
-					<div class="item-step">
-						<div class="item-step__count">04</div>
-						<div class="item-step__title">Кровля</div>
-						<div class="item-step__text">
-							<p>по плите или стропилам; металлочерепица, битумная/глиняная черепица</p>
-						</div>
-						<div class="item-step__image">
-							<img src="img/step4.jpg" alt="alt">
-						</div>
-						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
-					</div>
-					<div class="item-step">
-						<div class="item-step__count">05</div>
-						<div class="item-step__title">Фасад и коммуникации</div>
-						<div class="item-step__text">
-							<p>вентиляция, канализация, водопровод, электрика; штукатурка, панели, камень, планкен.</p>
-						</div>
-						<div class="item-step__image">
-							<img src="img/step5.jpg" alt="alt">
-						</div>
-						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
-					</div>
-					<div class="item-step">
-						<div class="item-step__count">06</div>
-						<div class="item-step__title">Оформление собственности</div>
-						<div class="item-step__text">
-							<p>геодезия, инвентаризация, техплан, ЕГРН, Росреестр.</p>
-						</div>
-						<div class="item-step__image">
-							<img src="img/step6.jpg" alt="alt">
-						</div>
-						<div class="item-step__next">Следующий этап <img src="img/long_arrow.svg" alt="alt"> <i class="far fa-long-arrow-down"></i></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<section class="portfolio">
 			<div class="container">
 				<h2 class="title-section">Портфолио по направлениям</h2>
@@ -792,6 +502,58 @@
 							</div>
 							<a href="#" class="btn-main btn-main_secondary">Смотреть</a>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="videos">
+			<div class="container">
+				<h2 class="title-section">Видео-отзывы</h2>
+				<div class="row row_main">
+					<div class="col-lg-3 col-6">
+						<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
+							<span class="video-review__image">
+								<img src="img/video_review1.jpg" alt="alt">
+							</span>
+							<span class="video-review__content">
+								<span class="video-review__title">Кошелева Ольга Владимировна</span>
+								<span class="video-review__descr">Ялта, п. Гаспра</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-3 col-6">
+						<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
+							<span class="video-review__image">
+								<img src="img/video_review1.jpg" alt="alt">
+							</span>
+							<span class="video-review__content">
+								<span class="video-review__title">Кошелева Ольга Владимировна</span>
+								<span class="video-review__descr">Ялта, п. Гаспра</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-3 col-6">
+						<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
+							<span class="video-review__image">
+								<img src="img/video_review1.jpg" alt="alt">
+							</span>
+							<span class="video-review__content">
+								<span class="video-review__title">Кошелева Ольга Владимировна</span>
+								<span class="video-review__descr">Ялта, п. Гаспра</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-3 col-6">
+						<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
+							<span class="video-review__image">
+								<img src="img/video_review1.jpg" alt="alt">
+							</span>
+							<span class="video-review__content">
+								<span class="video-review__title">Кошелева Ольга Владимировна</span>
+								<span class="video-review__descr">Ялта, п. Гаспра</span>
+							</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -970,53 +732,153 @@
 			</div>
 		</section>
 
-		<section class="videos">
+		<section class="page-documents">
 			<div class="container">
-				<h2 class="title-section">Видео-отзывы</h2>
-				<div class="row row_main">
-					<div class="col-lg-3 col-6">
-						<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
-							<span class="video-review__image">
-								<img src="img/video_review1.jpg" alt="alt">
-							</span>
-							<span class="video-review__content">
-								<span class="video-review__title">Кошелева Ольга Владимировна</span>
-								<span class="video-review__descr">Ялта, п. Гаспра</span>
-							</span>
-						</a>
+				<h1 class="title-section">Документы</h1>
+				<div class="slider-sertificats">
+					<div>
+						<div class="item-sertificate">
+							<a href="img/document1.jpg" class="item-sertificate__image fancybox">
+								<span class="item-sertificate__inner">
+									<img src="img/document1.jpg" alt="alt">
+								</span>
+							</a>
+							<div class="item-sertificate__title">CCF22012016 (1)</div>
+							<a href="#" class="item-sertificate__link">Скачать</a>
+						</div>
 					</div>
-					<div class="col-lg-3 col-6">
-						<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
-							<span class="video-review__image">
-								<img src="img/video_review1.jpg" alt="alt">
-							</span>
-							<span class="video-review__content">
-								<span class="video-review__title">Кошелева Ольга Владимировна</span>
-								<span class="video-review__descr">Ялта, п. Гаспра</span>
-							</span>
-						</a>
+					<div>
+						<div class="item-sertificate">
+							<a href="img/document1.jpg" class="item-sertificate__image fancybox">
+								<span class="item-sertificate__inner">
+									<img src="img/document1.jpg" alt="alt">
+								</span>
+							</a>
+							<div class="item-sertificate__title">CCF22012016 (1)</div>
+							<a href="#" class="item-sertificate__link">Скачать</a>
+						</div>
 					</div>
-					<div class="col-lg-3 col-6">
-						<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
-							<span class="video-review__image">
-								<img src="img/video_review1.jpg" alt="alt">
-							</span>
-							<span class="video-review__content">
-								<span class="video-review__title">Кошелева Ольга Владимировна</span>
-								<span class="video-review__descr">Ялта, п. Гаспра</span>
-							</span>
-						</a>
+					<div>
+						<div class="item-sertificate">
+							<a href="img/document1.jpg" class="item-sertificate__image fancybox">
+								<span class="item-sertificate__inner">
+									<img src="img/document1.jpg" alt="alt">
+								</span>
+							</a>
+							<div class="item-sertificate__title">CCF22012016 (1)</div>
+							<a href="#" class="item-sertificate__link">Скачать</a>
+						</div>
 					</div>
-					<div class="col-lg-3 col-6">
-						<a href="https://www.youtube.com/embed/E8d_JvMpoY4" class="video-review fancybox">
-							<span class="video-review__image">
-								<img src="img/video_review1.jpg" alt="alt">
-							</span>
-							<span class="video-review__content">
-								<span class="video-review__title">Кошелева Ольга Владимировна</span>
-								<span class="video-review__descr">Ялта, п. Гаспра</span>
-							</span>
-						</a>
+					<div>
+						<div class="item-sertificate">
+							<a href="img/document1.jpg" class="item-sertificate__image fancybox">
+								<span class="item-sertificate__inner">
+									<img src="img/document1.jpg" alt="alt">
+								</span>
+							</a>
+							<div class="item-sertificate__title">CCF22012016 (1)</div>
+							<a href="#" class="item-sertificate__link">Скачать</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="documents">
+			<div class="container">
+				<h2 class="title-section">Мы аккредитованы по всем направлениям</h2>
+				<div class="slider-wrapper-documents">
+					<div class="slider-documents">
+						<div>
+							<a href="#" class="item-document">
+								<span class="item-document__title">Градостроительный план земельного участка (ГПЗУ)</span>
+								<span class="item-document__bottom">
+									<span class="item-document__format">pdf</span>
+									<span class="item-document__info">
+										<span class="item-document__date">01.01.2024</span>
+										<span class="item-document__size">100 Kb</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="item-document">
+								<span class="item-document__title">Заключение государственной экспертизы проектной документации</span>
+								<span class="item-document__bottom">
+									<span class="item-document__format">pdf</span>
+									<span class="item-document__info">
+										<span class="item-document__date">01.01.2024</span>
+										<span class="item-document__size">100 Kb</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="item-document">
+								<span class="item-document__title">Согласования с надзорными органами</span>
+								<span class="item-document__bottom">
+									<span class="item-document__format">pdf</span>
+									<span class="item-document__info">
+										<span class="item-document__date">01.01.2024</span>
+										<span class="item-document__size">100 Kb</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="item-document">
+								<span class="item-document__title">Документ, подтверждающий уплату госпошлины</span>
+								<span class="item-document__bottom">
+									<span class="item-document__format">pdf</span>
+									<span class="item-document__info">
+										<span class="item-document__date">01.01.2024</span>
+										<span class="item-document__size">100 Kb</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="item-document">
+								<span class="item-document__title">Градостроительный план земельного участка (ГПЗУ)</span>
+								<span class="item-document__bottom">
+									<span class="item-document__format">pdf</span>
+									<span class="item-document__info">
+										<span class="item-document__date">01.01.2024</span>
+										<span class="item-document__size">100 Kb</span>
+									</span>
+								</span>
+							</a>
+						</div>
+						<div>
+							<a href="#" class="item-document">
+								<span class="item-document__title">Заключение государственной экспертизы проектной документации</span>
+								<span class="item-document__bottom">
+									<span class="item-document__format">pdf</span>
+									<span class="item-document__info">
+										<span class="item-document__date">01.01.2024</span>
+										<span class="item-document__size">100 Kb</span>
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-9">
+							<div class="documents__buttons">
+								<a href="#" class="btn-main btn-main_secondary">Скачать смету <i class="far fa-arrow-to-bottom"></i></a>
+								<a href="#" class="btn-main btn-main_secondary">Скачать договор <i class="far fa-arrow-to-bottom"></i></a>
+							</div>
+						</div>
+						<div class="col-lg-3 col_order">
+							<div class="slider-controls">
+								<div class="slider-counter">
+									<div class="slider-counter__current">0</div>
+									<span>/</span>
+									<div class="slider-counter__total">0</div>
+								</div>
+								<div class="slider-controls__arrows"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
